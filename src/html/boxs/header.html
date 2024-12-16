@@ -1,0 +1,81 @@
+<header class="header" id="header">
+  <div class="header__banner-line">
+    <div class="header__container container">
+      <ul class="list-reset header__banner-list">
+        <li>
+          БУДЬ В КУРСЕ ПОСЛЕДНИХ НОВОСТЕЙ, ПОДПИСЫВАЙСЯ НА НАШ ТЕЛЕГРАМ!
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header__top-line">
+    <div class="header__container container">
+      <div class="header__content">
+        <div class="header__group-tooltip group-tooltip">
+          <div class="group-tooltip__item">
+            <a href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <use xlink:href="img/sprite.svg#rub"></use>
+              </svg>
+            </a>
+            <span>
+              Гарантия лучшей цены
+            </span>
+          </div>
+          <div class="group-tooltip__item">
+            <a href="#">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <use xlink:href="img/sprite.svg#EAC"></use>
+              </svg>
+            </a>
+            <span>
+              Оригинальные товары
+            </span>
+          </div>
+        </div>
+        <div class="header__burger">
+          <button class="burger btn-reset" id="burgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <div class="header__box-logo-mob">
+          <a href="/"><img src="img/logo/logo-mob.svg"></a>
+        </div>
+        <div class="header__group-right">
+          @@include('../components/search.html')
+          <button class="header__search-btn btn-reset" id="searchBtn">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+              <use xlink:href="img/sprite.svg#search1"></use>
+            </svg>
+          </button>
+          <div class="header__group-btn-link">
+            <a href="#" class="header__btn-link">
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none">
+                <use xlink:href="img/sprite.svg#basket"></use>
+              </svg>
+              <span>Корзина</span>
+            </a>
+            <a href="#" class="header__btn-link">
+              <svg width="19" height="18" viewBox="0 0 19 18" fill="none">
+                <use xlink:href="img/sprite.svg#LogIn"></use>
+              </svg>
+              <span>Войти</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom-line" id="burgerMenu">
+    <div class="header__container container">
+      <div class="header__content">
+        @@include('../components/logo.html')
+        @@include('../components/btn-catalog.html')
+        @@include('../components/nav.html')
+        @@include('../components/btn-1.html',{"text":"Вступить в клуб"})
+      </div>
+    </div>
+  </div>
+</header>

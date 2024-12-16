@@ -1,0 +1,16 @@
+.main-section-2 {
+  &__list-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(319px, 1fr));
+    gap: 10px;
+
+    li {
+      min-height: 300px;
+      height: auto;
+
+      &:first-child {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+}

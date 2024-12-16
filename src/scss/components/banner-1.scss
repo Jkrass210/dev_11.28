@@ -1,0 +1,111 @@
+.banner-1 {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  max-width: 350px;
+  padding: 23px 30px;
+  border-radius: 12px;
+  background-color: var(--color-text-black);
+  background-image: url("../img/hero/1.png");
+  background-position: center center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0px auto auto 0px;
+    width: 100%;
+    height: 50%;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #600809 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: auto  auto 0px 0px;
+    width: 100%;
+    height: 50%;
+    border-radius: 12px;
+    background: linear-gradient(0deg, #600809 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  p {
+    position: relative;
+    margin-bottom: 17px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-text-white);
+    span {
+      font-weight: 800;
+      color: var(--color-red);
+    }
+    &.banner-1__desc-small {
+      margin-bottom: 9px;
+      font-size: 14px;
+      line-height: 126%;
+    }
+  }
+
+  a {
+    width: 100%;
+    max-width: 250px;
+    display: inline-block;
+    border-radius: 100px;
+    position: relative;
+    z-index: 1;
+    padding: 11px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-text-gray);
+    background-color: var(--color-text-white);
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,&:hover,&:active {
+      color: var(--color-text-white);
+      background-color: var(--color-red);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .banner-1 {
+    order: 3;
+    max-width: 270px;
+
+    p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      letter-spacing: 0.02em;
+      &.banner-1__desc-small {
+        font-size: 12px;
+        line-height: 106%;
+      }
+    }
+
+    a {
+      max-width: 175px;
+      border-radius: 71px;
+      padding: 8px;
+      font-size: 12px;
+      line-height: 105%;
+    }
+  }
+}

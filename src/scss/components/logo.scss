@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  a {
+    display: flex;
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+    &:focus-visible {
+      outline: 1px dashed var(--color-gray-1);
+    }
+  }
+}
