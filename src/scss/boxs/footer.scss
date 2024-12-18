@@ -279,14 +279,16 @@
       position: fixed;
       bottom: 0;
       left: 0;
+      z-index: 2;
       background-color: var(--color-text-white);
+      box-shadow: 0 -4px 6px 0 rgba(0, 0, 0, 0.1);
     }
 
     &__menu-container {
       padding: 12px 25px;
       display: flex;
       justify-content: space-between;
-
+      
       a {
         display: flex;
         flex-direction: column;

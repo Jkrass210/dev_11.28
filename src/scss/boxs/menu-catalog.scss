@@ -58,3 +58,26 @@
     }
   }
 }
+
+@media (max-width: 1030px) {
+  .menu-catalog {
+    &__list {
+      gap: calc(6px + (20 - 6) * ((100vw - 320px) / (1030 - 320)));
+  
+      li:not(:last-child)::after {
+        right: calc((3px + (10 - 3) * ((100vw - 320px) / (1030 - 320))) * -1);
+      }
+  
+      a {
+        padding-left: calc(6px + (20 - 6) * ((100vw - 320px) / (1030 - 320)));
+        padding-right: calc(6px + (20 - 6) * ((100vw - 320px) / (1030 - 320)));
+        font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1030 - 320)));
+      }
+    }
+  }
+}
+@media (max-width: 620px) {
+  .menu-catalog {
+    display: none;
+  }
+}
