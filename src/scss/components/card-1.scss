@@ -2,18 +2,18 @@
   position: relative;
   height: 100%;
   padding: 10px;
-  position: relative;
   border-radius: 12px;
   border: 1px dashed rgba(64, 64, 64, 0.2);
+  background-color: var(--color-text-white);
 
-  &::after {
+  /*&::after {
     content: "";
     position: absolute;
     inset: 10px;
     border-radius: 12px;
     background-color: rgba(198, 16, 18, 0.7);
     pointer-events: none;
-  }
+  }*/
 
   img {
     display: flex;
