@@ -378,6 +378,7 @@ body {
   padding-right: 12px;
   display: flex;
   border-radius: 34px;
+  overflow: hidden;
   background-color: var(--color-text-white);
 }
 .search__form {
@@ -712,7 +713,6 @@ body {
   height: 100%;
   padding: 10px;
   border-radius: 12px;
-  border: 1px dashed rgba(64, 64, 64, 0.2);
   background-color: var(--color-text-white);
   /*&::after {
     content: "";
@@ -722,6 +722,12 @@ body {
     background-color: rgba(198, 16, 18, 0.7);
     pointer-events: none;
   }*/
+}
+.card-1__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
 .card-1 img {
   display: flex;
