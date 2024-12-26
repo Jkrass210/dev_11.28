@@ -1,6 +1,7 @@
 import { toggleElement } from './module/toggleElement.js';
 import { footerTabs } from './module/footerTabs.js';
 import { moveLinksOnResize } from './module/moveLinksOnResize.js';
+import { dropDown } from './module/dropDown.js';
 
 if (document.querySelector('#searchBtn') && document.querySelector('#search')) {
   toggleElement({
@@ -35,4 +36,8 @@ if (document.querySelector('.header__group-btn-link') && document.querySelector(
     headerLinksSelector:".header__btn-link",
     footerContainerSelector:'.footer__menu-container'
   });
+}
+
+if (document.querySelectorAll('.drop-down-1__btn')) {
+  dropDown();
 }

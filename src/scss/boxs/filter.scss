@@ -1,0 +1,8 @@
+.filter {
+  &__list {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

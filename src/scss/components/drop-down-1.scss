@@ -1,0 +1,109 @@
+.drop-down-1 {
+  display: flex;
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 12px 15px;
+    border: 1px solid var(--color-border-gray-1);
+    color: var(--color-text-gray);
+    transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,&:hover,&:active {
+      border-color: var(--color-text-black);
+      color: var(--color-text-black);
+      span {
+        color: var(--color-text-black);
+      }
+    }
+
+    &.active {
+      background-color: var(--color-gray-3);
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &.active + .drop-down-1__list {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    svg {
+      transition: transform 0.4s ease-in-out;
+    }
+
+    span {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 126%;
+      color: var(--color-text-gray);
+    }
+  }
+
+  &__list {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    top: 100%;
+    padding: 30px 0 42px;
+    border-radius: 0 0 12px 12px;
+    border-width: 0 1px 1px 1px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: center;
+    background-color: var(--color-text-white);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+  &__item {
+    padding: 0 30px;
+    &:not(:first-child) {
+      border-left: 1px solid var(--color-border-gray-2);
+    }
+  }
+  &__point-title {
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 147%;
+    color: var(--color-border-gray-3);
+  }
+
+  &__point-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    max-height: 120px;
+    column-gap: clamp(5px, 2vw, 30px);
+
+    a {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 126%;
+      color: var(--color-text-gray);
+      transition: color 0.4s ease-in-out;
+
+      &:focus,&:focus-visible {
+        outline: none;
+      }
+
+      &:focus-visible,&:hover,&:active {
+        color: var(--color-text-black);
+      }
+    }
+  }
+}

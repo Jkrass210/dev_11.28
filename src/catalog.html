@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head.html',{"title":"Каталог"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    <section class="catalog-section-1 section">
+      <div class="catalog-section-1__container container">
+        @@include('html/components/top-info.html')
+        @@include('html/components/list-links.html')
+        <div class="catalog-section-1__filter-search-line">
+          @@include('html/boxs/filter.html')
+          @@include('html/components/search.html')
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

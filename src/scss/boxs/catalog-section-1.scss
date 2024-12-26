@@ -1,0 +1,18 @@
+.catalog-section-1 {
+  &__filter-search-line {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(42 / 1200 * 100%);
+  }
+
+  .search {
+    border: 1px solid rgba(64, 64, 64, 0.6);
+    &__form {
+      input {
+        padding: 13px 14px;
+      }
+    }
+  }
+}
