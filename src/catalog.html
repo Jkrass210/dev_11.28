@@ -7,10 +7,53 @@
     <section class="catalog-section-1 section">
       <div class="catalog-section-1__container container">
         @@include('html/components/top-info.html')
-        @@include('html/components/list-links.html')
-        <div class="catalog-section-1__filter-search-line">
-          @@include('html/boxs/filter.html')
-          @@include('html/components/search.html')
+        <div class="catalog-section-1__menu-line">
+          @@include('html/components/list-links.html')
+          <div class="catalog-section-1__filter-search-line">
+            @@include('html/boxs/filter.html')
+            @@include('html/components/search.html')
+          </div>
+        </div>
+        <div class="catalog-section-1__content">
+          <ul class="catalog-section-1__list list-reset">
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/1.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/2.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/3.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2-test.html',{"urlImg":"img/catalog/box-catalog/4.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/1.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/2.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/3.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/4.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/1.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/2.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/3.jpg"})
+            </li>
+            <li>
+              @@include('html/components/card-2.html',{"urlImg":"img/catalog/box-catalog/4.jpg"})
+            </li>
+          </ul>
+          @@include('html/components/line-upload-more.html')
         </div>
       </div>
     </section>

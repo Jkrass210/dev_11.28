@@ -15,4 +15,17 @@
       }
     }
   }
+
+  &__content {
+    padding-top: 80px;
+    padding-bottom: 95px;
+  }
+
+  &__list {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 60px;
+    column-gap: 20px;
+  }
 }

@@ -1,0 +1,82 @@
+.line-upload-more {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__more-link {
+    padding: 12px 15px;
+    border: 1px solid var(--color-border-gray-1);
+    border-radius: 12px;
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: center;
+    color: var(--color-text-gray);
+    transition: border-color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,&:hover,&:active {
+      border-color: var(--color-text-black);
+      background-color: var(--color-beak-card);
+    }
+  }
+
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    color: var(--color-text-gray);
+    transition: color 0.4s ease-in-out;
+
+    &:focus,&:focus-visible {
+      outline: none;
+    }
+
+    &:focus-visible,&:hover,&:active {
+      color: var(--color-text-black);
+    }
+  }
+
+  &__box-links {
+    display: flex;
+    gap: 10px;
+
+    a {
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border-radius: 6px;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 110%;
+      text-align: center;
+      color: var(--color-text-gray);
+      transition: background-color 0.4s ease-in-out;
+
+      &:focus,&:focus-visible {
+        outline: none;
+      }
+
+      &:focus-visible,&:hover,&:active {
+        background-color: var(--color-body);
+      }
+    }
+  }
+}
