@@ -7,11 +7,15 @@
     <section class="catalog-section-1 section">
       <div class="catalog-section-1__container container">
         @@include('html/components/top-info.html')
-        <div class="catalog-section-1__menu-line">
+        <div class="catalog-section-1__menu-line" id="filterMenu">
           @@include('html/components/list-links.html')
           <div class="catalog-section-1__filter-search-line">
             @@include('html/boxs/filter.html')
             @@include('html/components/search.html')
+            <div class="catalog-section-1__filter-search-group-btn">
+              @@include('html/components/btn-1.html',{"text":"Применить"})
+              @@include('html/components/btn-1.html',{"text":"Сбросить"})
+            </div>
           </div>
         </div>
         <div class="catalog-section-1__content">

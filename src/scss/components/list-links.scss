@@ -59,3 +59,28 @@
     transition: color 0.4s ease-in-out;
   }
 }
+
+@media (max-width: 900px) {
+  .list-links {
+    &__items {
+      gap: 10px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--color-border-gray);
+    }
+    &__link {
+      min-width: 140px;
+      padding: 15px;
+      p {
+        flex-direction: column;
+        gap: 2px;
+      }
+    }
+    &__desc {
+      font-size: 14px;
+    }
+    &__desc-small {
+      font-size: 12px;
+    }
+  }
+  
+}

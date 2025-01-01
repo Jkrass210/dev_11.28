@@ -152,3 +152,33 @@
     }
   } 
 }
+
+@media (max-width: 620px) {
+  .card-2 {
+    &__discount {
+      font-size: 10px;
+      line-height: 176%
+    }
+    &__info {
+      gap: 15px;
+    }
+    &__all-price {
+      gap: 10px;
+      font-size: 14px;
+      line-height: 95%;
+      .price-old {
+        font-size: 10px;
+        line-height: 133%;
+      }
+    }
+    &__link {
+      gap: 0;
+      font-size: 14px;
+      line-height: 126%;
+      .info-thing {
+        font-size: 12px;
+        line-height: 147%;
+      }
+    }
+  }
+}

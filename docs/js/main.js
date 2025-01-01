@@ -13,6 +13,16 @@ if (document.querySelector('#searchBtn') && document.querySelector('#search')) {
   });
 }
 
+if (document.querySelector('#filterBtn') && document.querySelector('#filterMenu')) {
+  toggleElement({
+    toggleBtnId: 'filterBtn',
+    toggleElementId: 'filterMenu',
+    /*otherElementsToClose: [
+      { toggleElementId: 'burgerMenu', toggleBtnId: 'burgerBtn', addStopScroll: true }
+    ]*/
+  });
+}
+
 if (document.querySelector('#burgerBtn') && document.querySelector('#burgerMenu')) {
   toggleElement({
     toggleBtnId: 'burgerBtn',

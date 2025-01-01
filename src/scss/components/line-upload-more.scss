@@ -77,6 +77,30 @@
       &:focus-visible,&:hover,&:active {
         background-color: var(--color-body);
       }
+
+      &.active {
+        pointer-events: none;
+        background-color: var(--color-body);
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .line-upload-more {
+    gap: 20px;
+    &__more-link {
+      font-size: 12px;
+      line-height: 147%;
+    }
+    &__wrapp {
+      justify-content: center;
+    }
+    &__link {
+      display: none;
+    }
+    &__box-links {
+      gap: 5px;
     }
   }
 }
