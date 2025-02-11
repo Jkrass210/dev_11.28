@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head.html',{"title":"Карточка продукта"})
+<body>
+  @@include('html/boxs/header.html')
+  <main class="main">
+    <section class="product-card-section-1 section">
+      <div class="product-card-section-1__container container">
+        <div class="product-card-section-1__content">
+          <div class="product-card-section-1__left">
+            <div class="product-card-section-1__mobil-hidden"></div>
+            @@include('html/boxs/box-swiper-product.html')
+          </div>
+          <div class="product-card-section-1__right">
+            <div class="product-card-section-1__top-line">
+              <div class="product-card-section-1__top-line-wrapp">
+                <h1 class="product-card-section-1__title">
+                  <span>Футболка</span>
+                  LACOSTE
+                </h1>
+                <div class="product-card-section-1__info-group">
+                  <p>TEXTILE</p>
+                  <button class="btn-reset">
+                    <span>TH6709001</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                      <use xlink:href="img/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-section-1__box-size">
+              <ul class="product-card-section-1__list list-reset">
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"40"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"42"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"43"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"44"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"45"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"46"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"40"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"40"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"40"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"40"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"40"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"40"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"44"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"44"})
+                </li>
+                <li>
+                  @@include('html/components/checkbox-1.html',{"n":"44"})
+                </li>
+              </ul>
+              <div class="product-card-section-1__table-wrapp active">
+                <button class="product-card-section-1__btn btn-reset">
+                  Таблица размеров
+                </button>
+                <div class="product-card-section-1__table-box">
+                  <div class="table-box">
+                    @@include('html/components/btn-close.html')
+                    <h3 class="table-box__title">
+                      Таблица размеров
+                    </h3>
+                    <p class="table-box__desc">
+                      ВАЖНО! Более приоритетные и полные <a href="#">размеры бренда LACOSTE</a>
+                    </p>
+                    <div class="box-size-table">
+                      <table class="size-table">
+                        <tbody>
+                          <tr>
+                            <td>РОССИЙСКИЙ РАЗМЕР</td>
+                            <td>40</td>
+                            <td>42</td>
+                            <td>44</td>
+                            <td>46</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                            <td>48</td>
+                            <td>50</td>
+                            <td>52</td>
+                          </tr>
+                          <tr>
+                            <td>МЕЖДУНАРОДНЫЙ РАЗМЕР</td>
+                            <td>XXS/XS</td>
+                            <td>XS/S</td>
+                            <td>S</td>
+                            <td>M</td>
+                            <td>L</td>
+                            <td>L/XL</td>
+                            <td>XL</td>
+                            <td>L</td>
+                            <td>L/XL</td>
+                            <td>XL</td>
+                          </tr>
+                          <tr>
+                            <td>ОБХВАТ ГРУДИ</td>
+                            <td>78-82</td>
+                            <td>82-86</td>
+                            <td>86-90</td>
+                            <td>90-94</td>
+                            <td>94-98</td>
+                            <td>98-102</td>
+                            <td>102-106</td>
+                            <td>94-98</td>
+                            <td>98-102</td>
+                            <td>102-106</td>
+                          </tr>
+                          <tr>
+                            <td>ОБХВАТ ТАЛИИ</td>
+                            <td>58-62</td>
+                            <td>62-66</td>
+                            <td>66-70</td>
+                            <td>70-74</td>
+                            <td>74-78</td>
+                            <td>78-82</td>
+                            <td>82-86</td>
+                            <td>74-78</td>
+                            <td>78-82</td>
+                            <td>82-86</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-card-section-1__features">
+              <ul class="product-card-section-1__table list-reset">
+                <li class="product-card-section-1__table-row">
+                  <p>Пол</p>
+                  <span></span>
+                  <p><span>Женщины</span></p>
+                </li>
+                <li class="product-card-section-1__table-row">
+                  <p>Категория</p>
+                  <span></span>
+                  <p><span>Футболки</span></p>
+                </li>
+                <li class="product-card-section-1__table-row">
+                  <p>Цвет</p>
+                  <span></span>
+                  <p><span>Белый</span></p>
+                </li>
+                <li class="product-card-section-1__table-row">
+                  <p>Состав</p>
+                  <span></span>
+                  <p><span>100% хлопок</span></p>
+                </li>
+              </ul>
+            </div>
+            <div class="product-card-section-1__box-price">
+              <div class="product-card-section-1__box-price-left">
+                <p class="top">БЕЗ ПОДПИСКИ</p>
+                <div class="group-price">
+                  <p class="new">8082.00 ₽</p>
+                  <p class="old">8980 ₽</p>
+                </div>
+              </div>
+              <div class="product-card-section-1__box-price-right">
+                <a href="#" class="btn-basket btn-1">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+                    <use xlink:href="img/sprite.svg#basketIMG"></use>
+                  </svg>
+                  <span>В КОРЗИНУ</span>
+                </a>
+                @@include('html/components/counter.html')
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/boxs/footer.html')
+</body>
+</html>

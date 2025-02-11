@@ -1,0 +1,33 @@
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  button {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background-color: var(--color-gray-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.4s ease-in-out;
+    &:focus {
+      outline: none;
+    }
+    &:focus,&:hover,&:active {
+      background-color: var(--color-red);
+      span {
+        color: var(--color-text-white);
+      }
+    }
+    span {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 49px;
+      line-height: 100%;
+      color: var(--color-btn-1);
+      transform: rotate(45deg);
+      transition: color 0.4s ease-in-out;
+    }
+  }
+}

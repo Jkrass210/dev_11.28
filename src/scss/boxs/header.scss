@@ -62,6 +62,7 @@
     transition: color 0.4s ease-in-out;
 
     &:focus,&:focus-visible {
+      outline: none;
       color: var(--color-text-black);
     }
 

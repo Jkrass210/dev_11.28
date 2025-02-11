@@ -1,0 +1,33 @@
+.checkbox-1 {
+  display: flex;
+  cursor: pointer;
+  &__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    &:focus {
+      outline: none;
+    }
+    &:focus,&:hover,&:active,&:checked {
+      & + .checkbox-1__castom {
+        color: var(--color-text-white);
+        background-color: var(--color-red);
+      }
+    }
+  }
+  &__castom {
+    border-radius: 15px;
+    padding: 6px 10px;
+    background-color: var(--color-gray-3);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 126%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-text-gray);
+    transition: color 0.4s ease-in-out, background-color 0.4s ease-in-out;
+  }
+}

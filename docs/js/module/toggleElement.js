@@ -48,15 +48,19 @@ export function toggleElement({
       }
     });
   }
-  document.addEventListener('click', (e) => {
-    if (!toggleElement.contains(e.target) && !toggleBtn.contains(e.target)) {
-      toggleState(false);
-    }
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && toggleElement.classList.contains('active')) {
-      toggleState(false);
-    }
-  });
+    document.addEventListener('click', (e) => {
+      if (toggleElement.classList.contains('active')){
+        if (!toggleElement.contains(e.target) && !toggleBtn.contains(e.target)) {
+          toggleState(false);
+        }
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (toggleElement.classList.contains('active')){
+        if (e.key === 'Escape' && toggleElement.classList.contains('active')) {
+          toggleState(false);
+        }
+      }
+    });
 }
 
