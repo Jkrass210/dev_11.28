@@ -5,6 +5,7 @@ import { moveLinksOnResize } from './module/moveLinksOnResize.js';
 import { dropDown } from './module/dropDown.js';
 import { copy } from './module/copy.js';
 import { handleResize } from './module/handleResize.js';
+import { openSearch } from './module/openSearch.js';
 
 if (document.querySelector('#searchBtn') && document.querySelector('#search')) {
   toggleElement({
@@ -92,5 +93,7 @@ if (document.querySelector(".product-card-section-1__top-line-wrapp") && documen
   window.addEventListener("resize", () => handleResize(mobileHidden, btn, topSection, 750));
 }
 
-
+if (document.querySelector('#search')){
+  openSearch()
+}
 

@@ -37,11 +37,16 @@
       outline-color: var(--color-beak-card);
     }
   }
-
-  &__discount {
+  &__markers {
     position: absolute;
     left: 10px;
     bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__discount {
+    display: none;
     padding: 8px 10px;
     border-radius: 100px;
     pointer-events: none;
@@ -54,6 +59,9 @@
     text-align: center;
     color: var(--color-text-white);
     background-color: var(--color-red);
+    &.active {
+      display: block;
+    }
   }
 
   &__info {

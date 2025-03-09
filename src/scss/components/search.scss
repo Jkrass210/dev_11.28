@@ -4,11 +4,13 @@
   border-radius: 34px;
   overflow: hidden;
   background-color: var(--color-text-white);
+  transition: width 0.4s ease-in-out;
 
   &__form {
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: width 0.4s ease-in-out;
 
     input {
       display: inline-block;
@@ -20,6 +22,7 @@
       font-size: 13px;
       letter-spacing: 0.03em;
       color: var(--color-text-black);
+      transition: width 0.4s ease-in-out;
 
       &:focus,&:focus-visible {
         outline: none;
