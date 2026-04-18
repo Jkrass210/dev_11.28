@@ -1,0 +1,107 @@
+<div class="nsk__box-puzzle" id="nskBanner">
+  <div class="nsk__container container">
+    <div class="nsk__box-img bottom-right">
+      <div class="nsk__img ">
+        <div class="content-text">
+          <div class="heading -top">
+            MAJOR EXPERT
+          </div>
+          <div class="text">
+            Лучшие авто по отзывам покупателей
+          </div>
+          <div class="heading -bottom">
+            AUTO.RU БИЗНЕС
+          </div>
+        </div>
+        <button class="nsk__close" id="nskClose">
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#" class="nsk__link" id="nskLink">
+          <img src="img/puzzle/puzzle-b.svg" alt="img">
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    /*document.addEventListener('DOMContentLoaded', function () {
+      const closeButton = document.getElementById('nskClose');
+      const banner = document.getElementById('nskBanner');
+      const link = document.getElementById('nskLink');
+      const storageKey = 'nskBannerHidden';
+
+      // Проверяем, было ли скрытие баннера и не истекло ли время
+      const hiddenUntil = localStorage.getItem(storageKey);
+      if (hiddenUntil && Date.now() < parseInt(hiddenUntil)) {
+        banner.style.display = 'none';
+      }
+
+      // Функция для скрытия баннера (та же логика, что и у closeButton)
+      function hideBanner() {
+        const hideDuration = window.nskHideDuration || 60 * 1000; // 1 минута (для теста)
+        banner.style.display = 'none';
+
+        const hiddenUntil = Date.now() + hideDuration;
+        localStorage.setItem(storageKey, hiddenUntil.toString());
+
+        setTimeout(function () {
+          banner.style.display = '';
+          localStorage.removeItem(storageKey);
+        }, hideDuration);
+      }
+
+      // Обработчик для кнопки закрытия
+      closeButton.addEventListener('click', hideBanner);
+
+      // Обработчик для ссылки (сначала скрываем баннер, затем переход)
+      link.addEventListener('click', function (event) {
+        event.preventDefault(); // Отменяем стандартный переход
+        hideBanner(); // Скрываем баннер
+
+        // Через небольшой таймаут (на случай анимации) выполняем переход
+        setTimeout(() => {
+          window.location.href = link.href;
+        }, 100);
+      });
+    });*/
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const closeButton = document.getElementById('nskClose');
+      const banner = document.getElementById('nskBanner');
+      const link = document.getElementById('nskLink');
+      const storageKey = 'nskBannerHidden';
+
+      // Проверяем, было ли скрытие баннера и не истекло ли время
+      const hiddenUntil = localStorage.getItem(storageKey);
+      if (hiddenUntil && Date.now() < parseInt(hiddenUntil)) {
+        banner.style.display = 'none';
+      }
+
+      // Функция для скрытия баннера (та же логика, что и у closeButton)
+      function hideBanner() {
+        const hideDuration = window.nskHideDuration || 60 * 1000; // 1 минута (для теста)
+        banner.style.display = 'none';
+
+        const hiddenUntil = Date.now() + hideDuration;
+        localStorage.setItem(storageKey, hiddenUntil.toString());
+
+        setTimeout(function () {
+          banner.style.display = '';
+          localStorage.removeItem(storageKey);
+        }, hideDuration);
+      }
+
+      // Обработчик для кнопки закрытия
+      closeButton.addEventListener('click', hideBanner);
+
+      // Обработчик для ссылки (открываем в новом окне и скрываем баннер)
+      link.addEventListener('click', function (event) {
+        event.preventDefault(); // Отменяем стандартный переход
+        hideBanner(); // Скрываем баннер
+        
+        // Открываем ссылку в новом окне
+        window.open(link.href, '_blank');
+      });
+    });
+  </script>
+</div>
